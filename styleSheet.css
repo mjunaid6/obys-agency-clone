@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Silk Serif light";
+    src: url(./silkserif-lightitalic-webfont.ttf);
+}
+
+@font-face {
+    font-family: "silk serif regular";
+    src: url(./silkserif-regularitalic-webfont.ttf);
+}
+@font-face {
+    font-family: "Plain Regular";
+    src: url(./plain-regular-webfont.ttf);
+}
+
+
+#loader-page{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 20vh 8vw;
+    background-color: #0b0b0b;
+    z-index: 999;
+    transition: all ease 1s;
+}
+
+#load-count{
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+#load-count h5,h6{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif light";
+}
+
+.line{
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2vw;
+    text-transform: uppercase;
+}
+
+.line h1{
+    font-size: 7vw;
+    font-weight: 100;
+    font-family:"Plain regular";
+}
+.line:nth-of-type(3)>h2{
+    align-self: baseline;
+    height: 7vw;
+    font-size: 6.5vw;
+    opacity: 0;
+    animation: alpha 2s linear infinite;
+    transition: all ease;
+}
+
+@keyframes now-animation {
+    0%{
+        font-family: Plain Regular;
+        font-weight: 400;
+        -webkit-text-stroke: 0.1px white;
+        color: white;
+        opacity: 1;
+    }
+    48%{
+        font-family: Plain Regular;
+        font-weight: 400;
+        -webkit-text-stroke: 0.1px white;
+        color: white;
+        opacity: 0;
+    }
+    50%{
+        font-family: "silk serif regular";
+        font-weight: 400;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        opacity: 1;
+    }
+    100%{
+        font-family: "silk serif light";
+        font-weight: 500;
+        -webkit-text-stroke: 0.1px white;
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+.line:nth-of-type(4) h4{
+    margin-left: 25vw;
+    font-size: 1vw;
+    font-weight: 300;
+    text-transform: none;
+    font-family: "plain regular";
+}
+
+#main{
+    position: relative;
+    background-color: rgb(45, 44, 44);
+}
+
+#page1 ,#page2 ,#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+}
