@@ -8,6 +8,18 @@
 html, body{
     width: 100%;
     height: 100%;
+    cursor: none;
+}
+
+#cursor{
+    position: fixed;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 99;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
 }
 
 @font-face {
@@ -24,7 +36,20 @@ html, body{
     src: url(./plain-regular-webfont.ttf);
 }
 
+@font-face {
+    font-family: "plain light";
+    src: url("./plain-light-webfont.ttf");
+}
 
+@font-face {
+    font-family: "roboto medium";
+    src: url("./KFOlCnqEu92Fr1MmEU9fBBc4.ttf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("./KFOmCnqEu92Fr1Mu4mxK.ttf");
+}
 #loader-page{
     position: fixed;
     height: 100%;
@@ -116,8 +141,98 @@ html, body{
     background-color: rgb(45, 44, 44);
 }
 
-#page1 ,#page2 ,#page3{
+#nav-left{
+    position: fixed;
+    top: 1.6vw;
+    left: 5.3vw;
+    height: 5vw;
+    width: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+#page1{
+    position: relative;
     width: 100%;
     height: 100vh;
+    padding: 3.5vw 4vw;
+    background-color: #151515;
+}
+
+#nav{
+    width: 68vw;
+    height: 5vw;
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#nav>h1{
+    font-size: 1vw;
+    font-family: "plain light";
+    font-weight: 500;
+    line-height: 1vw;
+}
+
+#nav-right{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5vw;
+    align-items: center;
+}
+#nav-right>h3{
+    font-size: 1vw;
+    font-family: "plain light";
+    font-weight: 500;
+    line-height: 1vw;
+}
+
+#page1>h3{
+    position: absolute;
+    top: 30vh;
+    left:19vw;
+    font-size: 3vw;
+    font-weight: 200;
+    font-family:"silk serif regular";
+    line-height: 7.5vw;
+
+}
+
+.page1-line{
+    transform: translate(24vw,15vh);
+    display: flex;
+    text-transform: uppercase;
+    overflow: hidden;
+    gap: 0.1vw;
+}
+.page1-line>h1{
+    font-size: 7.5vw;
+    font-weight: 200;
+    font-family:"Plain regular";
+    line-height: 7.5vw;
+}
+.page1-line:nth-of-type(4)>h1{
+    text-decoration-line: underline;
+}
+.page1-line:nth-of-type(4)>h1:hover{
+    text-decoration-line: none;
+    -webkit-text-stroke: 1.5px white;
+    color: transparent;
+}
+
+.page1-line>h3{
+    margin-left: 0.5vw;
+    font-size: 7.5vw;
+    font-weight: 200;
+    font-family:"Plain regular";
+    line-height: 7.5vw;
+}
+
+#page2,#page3{
+    height: 100vh;
+    width: 100%;
     background-color: #151515;
 }
