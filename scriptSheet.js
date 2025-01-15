@@ -72,7 +72,7 @@ function loaderAnimation(){
     loaderTimeline.from("#nav-left",{
         opacity : 0
     })
-    loaderTimeline.from(".page1-line h1,h3",{
+    loaderTimeline.from(".page1-line h1,.page1-line h3",{
         y : 100,
         opacity : 0,
         duration : 0.5,
