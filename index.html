@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- our-stylesheet -->
     <link rel="stylesheet" href="./styleSheet.css">
+
+    <!-- remix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- locomotive-scroll -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+    <!-- shery css -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css"/>
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- text illate css -->
+    <link href="https://cdn.jsdelivr.net/npm/textillate@0.4.1/assets/animate.min.css" rel="stylesheet">
+
     <link rel="shortcut icon" href="./favicon.ico">
     <title>Obys Agency</title>
 </head>
@@ -92,6 +107,8 @@
             <div id="scroll-text">
                 <h4>Scroll</h4>
             </div>
+
+            <img id="flag" src="./images/Flag.jpg">
         </div>
 
         <div id="page2" data-scroll>
@@ -100,7 +117,7 @@
                     <i class="ri-play-large-fill"></i>
                 </div>
                 <img src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg">
-                <video  loop muted src="https://obys.agency/wp-content/uploads/2024/12/Obys-Showreel-2024.mp4"></video>
+                <video loop src="https://obys.agency/wp-content/uploads/2024/12/Obys-Showreel-2024.mp4"></video>
             </div>
         </div>
 
@@ -112,7 +129,9 @@
             <div id="images-page">
 
                 <div class="img-container">
-                    <h3>OLGA PRUDKA</h3>
+                    <div class="text-container">
+                        <h3>OLGA PRUDKA</h3>
+                    </div>
                     <div class="img-div">
                         <img src="./images/Olga_Prudka_1.png">
                         <img src="./images/Olga_Prudka_2.png">
@@ -125,7 +144,9 @@
                 </div>
 
                 <div class="img-container">
-                    <h3>Aim</h3>
+                    <div class="text-container">
+                        <h3>Aim</h3>
+                    </div>
                     <div class="img-div">
                         <img src="./images/AIM-1.png">
                         <img src="./images/AIM-2.png">
@@ -139,14 +160,22 @@
 
                 <div id="circle">
                     <i class="ri-arrow-down-line"></i>
+                    <div id="hover-text">
+                        <p>We are thrilled to have you on board. We hope you enjoy the projects❤️</p>
+                    </div>
                 </div>
 
                 <div id="circle">
-                    <i class="ri-arrow-down-line"></i>
+                    <i class="ri-arrow-right-down-line"></i>
+                    <div id="hover-text">
+                        <p>It will make you wow😉</p>
+                    </div>
                 </div>
 
                 <div class="img-container">
-                    <h3>Ochi</h3>
+                    <div class="text-container">
+                        <h3>Ochi</h3>
+                    </div>
                     <div class="img-div">
                         <img src="./images/OCHI.png">
                         <img src="./images/OCHI_2-1.png">
@@ -159,7 +188,9 @@
                 </div>
 
                 <div class="img-container">
-                    <h3>David laxer</h3>
+                    <div class="text-container">
+                        <h3>David laxer</h3>
+                    </div>
                     <div class="img-div">
                         <img src="./images/Laxer_1-2.png">
                         <img src="./images/Laxer_2.png">
@@ -172,7 +203,9 @@
                 </div>
 
                 <div class="img-container">
-                    <h3>Éminente</h3>
+                    <div class="text-container">
+                        <h3>Éminente</h3>
+                    </div>
                     <div class="img-div">
                         <img src="./images/Éminente_First.png">
                         <img src="./images/Éminente_Second.png">
@@ -185,11 +218,16 @@
                 </div>
 
                 <div id="circle">
-                    <i class="ri-arrow-down-line"></i>
+                    <i class="ri-arrow-right-line"></i>
+                    <div id="hover-text">
+                        <p>We like it's color pallete🎨</p>
+                    </div>
                 </div>
 
                 <div class="img-container">
-                    <h3>Makhno</h3>
+                    <div class="text-container">
+                        <h3>Makhno</h3>
+                    </div>
                     <div class="img-div">
                         <img src="./images/Makhno_First.png">
                         <img src="./images/Makhno_Hover.png">
@@ -204,7 +242,7 @@
                 <div id="circle">
                     <h4>All projects <span>(18)</span></h4>
                 </div>
-                
+
             </div>
         </div>
 
@@ -425,30 +463,33 @@
         <div id="page6" data-scroll>
             <h3>04</h3>
             <div id="page6-content">
-                <h1>let's create <i class="ri-arrow-right-line"></i></h1>
+                <div id="page6Head">
+                    <h1>let's create</h1>
+                    <i class="ri-arrow-right-line"></i>
+                </div>
 
                 <div class="underline"></div>
 
                 <div id="contact-links">
                     <div>
                         <h4>Socials</h4>
-                        <div class="socials-container">
+                        <div class="text-container">
                             <h3>Dribble</h3>
                         </div>
-                        <div class="socials-container">
+                        <div class="text-container">
                             <h3>Behance</h3>
                         </div>
-                        <div class="socials-container">
+                        <div class="text-container">
                             <h3>Instagram</h3>
 
                         </div>
-                        <div class="socials-container">
+                        <div class="text-container">
                             <h3>Facebook</h3>
                         </div>
-                        <div class="socials-container">
+                        <div class="text-container">
                             <h3>Twitter</h3>
                         </div>
-                        <div class="socials-container">
+                        <div class="text-container">
                             <h3>Youtube</h3>
                         </div>
                     </div>
@@ -460,7 +501,7 @@
                     </div>
                     <div>
                         <h4>Say Hi!</h4>
-                        <div class="socials-container">
+                        <div class="text-container">
                             <h3>info@obys.agency</h3>
                         </div>
                     </div>
@@ -473,23 +514,40 @@
         </div>
     </div>
 
-    
+    <!-- locomotive-scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- scroll-trigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" 
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- three-min-js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
 
+    <!-- controlKit -->
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
+    <!-- shery-js -->
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 
+    <!-- J-query -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- lettering js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" 
+    integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- textillate js -->
+    <script src="https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js"></script>
+
+    <!-- our scriptsheet -->
     <script src="./scriptSheet.js"></script>
 </body>
 </html>
