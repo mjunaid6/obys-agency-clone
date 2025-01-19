@@ -118,7 +118,7 @@ function imgHoverAnimation(){
     Shery.imageEffect(".img-div",{
         style: 5,
         config:{"a":{"value":1.37,"range":[0,30]},
-        "b":{"value":0.75,"range":[-1,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},
+        "b":{"value":0.75,"range":[-1,1]},"zindex":{"value":-9996999,"range":[-9999999,9999998]},
         "aspect":{"value":0.7518907498625488},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},
         "shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},
         "shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},
@@ -216,30 +216,6 @@ function videoAnimations(){
     });
 }
 
-function page6H1Animation(){
-    var page6H1 = document.querySelector("#page6Head>h1");
-
-    page6H1.addEventListener("mouseenter",function(){
-        $(page6H1).textillate('start'); 
-
-        $(page6H1).textillate({
-            in : {
-                effect : 'fadeIn',
-            },
-        });
-    })
-
-    page6H1.addEventListener("mouseleave",function(){
-        $(page6H1).textillate('start'); 
-
-        $(page6H1).textillate({
-            in : {
-                effect : 'fadeIn',
-            },
-        });
-    })
-}
-
 function textAnimation(){
     var text = document.querySelectorAll(".text-container>h3");
 
@@ -254,7 +230,52 @@ function textAnimation(){
             });
         })
     })
+
+    var awardsH3 = document.querySelectorAll("#awards h3");
+
+    awardsH3.forEach(function(elem){
+        elem.addEventListener("mouseenter",function(){
+            $(elem).textillate('start'); 
+        
+            $(elem).textillate({
+                in : {
+                    effect : 'bounce',
+                },
+            });
+        })
+    })
+
+    var awardsH4 = document.querySelectorAll("#awards h4");
+
+    awardsH4.forEach(function(elem){
+        elem.addEventListener("mouseenter",function(){
+            $(elem).textillate('start'); 
+        
+            $(elem).textillate({
+                in : {
+                    effect : 'flip',
+                },
+            });
+        })
+    })
 }
+
+function page6H1Animation(){
+    var headText = document.querySelectorAll("#page3>h1, #page4-content>h1 ,#page6Head>h1");
+
+    headText.forEach(function(elem){
+        elem.addEventListener("mouseenter",function(){
+            $(elem).textillate('start'); 
+    
+            $(elem).textillate({
+                in : {
+                    effect : 'flash',
+                },
+            });
+        })
+    })
+}
+
 locomotiveScrollAnime();
 
 loaderAnimation();
